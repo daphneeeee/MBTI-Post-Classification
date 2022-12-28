@@ -70,7 +70,7 @@ class CustomUnpickler(pickle.Unpickler):
 
 class XGBoost:
     def __init__(self):
-        self.vectorizer = CustomUnpickler(open('static/xgb/tfidf_vectorizer.pickle', 'rb')).load()
+        self.vectorizer = CustomUnpickler(open('static/xgb/vectorizer.pickle', 'rb')).load()
 
         with open('static/xgb/model.pickle', 'rb') as file:
             self.model = pickle.load(file)
