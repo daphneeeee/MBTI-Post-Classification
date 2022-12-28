@@ -4,3 +4,4 @@ __pycache__
 *.csv
 *.pickle
 *.ipynb
+.DS_Store
